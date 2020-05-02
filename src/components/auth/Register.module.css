@@ -1,0 +1,40 @@
+.formBody {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-color:rgb(219, 57, 84, 0.07);
+    border: 1px solid rgb(219, 57, 84, 0.5);
+    border-radius: 5px;
+    margin: 5rem 10rem;
+    padding: 2rem;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid rgb(219, 57, 84);
+    border-radius: 10px;
+    display: inline-block;
+    color: rgb(219, 57, 84);
+    padding: 4px 10px;
+    margin-right: 1rem;
+}
+
+.button:hover {
+    background-color: rgb(219, 57, 84);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(219, 57, 84);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1,
+{
+  padding: 8px 10px;
+  align-self: center;
+}

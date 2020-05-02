@@ -1,0 +1,43 @@
+.formBody {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-color:rgb(219, 57, 84, 0.07);
+    border: 1px solid rgb(219, 57, 84, 0.5);
+    border-radius: 5px;
+    margin: 5rem 10rem;
+    padding: 2rem;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid rgb(219, 57, 84);
+    border-radius: 10px;
+    transition: all .15s ease-in-out;
+    color: rgb(219, 57, 84);
+    /* font-weight: bold; */
+    padding: 4px 10px;
+}
+
+a.button:hover {
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    border: 0mm;
+    padding: 4px 10px;
+    background-color: rgb(219, 57, 84);
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(219, 57, 84);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(219, 57, 84);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

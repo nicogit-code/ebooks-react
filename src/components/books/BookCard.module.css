@@ -1,0 +1,47 @@
+.card {
+    margin: 0 2%;
+    /* max-width: 90%; */
+    display: flex;
+}
+
+.cardBody {
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
+    max-width: 250px;
+}
+
+.cardImg {
+    padding-bottom: 1.5rem;
+}
+
+.bookRating {
+    padding-bottom: 0.7rem;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid rgb(219, 57, 84);
+    border-radius: 10px;
+    transition: all .15s ease-in-out;
+    color: rgb(219, 57, 84);
+    /* font-weight: bold; */
+    padding: 4px 10px;
+}
+
+a.button:hover {
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    border: 0mm;
+    padding: 4px 10px;
+    background-color: rgb(219, 57, 84);
+    text-decoration: none;
+}
+
+@media (max-width: 770px) {
+    .card {
+        margin: 2% 0;
+    }
+}

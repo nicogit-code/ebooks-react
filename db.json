@@ -1,0 +1,330 @@
+{
+  "books": [
+    {
+      "id": 100,
+      "title": "Ciuma",
+      "author": "Albert Camus",
+      "isbn": "978-973-103-462-1",
+      "categoryId": 8,
+      "genre": "Fictiune",
+      "rating": "4,5/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49781650947_aa0f6ede3b_n.jpg",
+      "publicationDate": "1947",
+      "originalTitle": "La Peste",
+      "originalLanguage": "Franceză",
+      "description": "În ora?ul Oran, mii de ?obolani, ini?ial neobserva?i de popula?ie, încep să moară în stradă. Curând începe o isterie care determină ziarele locale să prezinte acest incident straniu. Autorită?ile răspund presiunii publice prin strângerea ?i incinerarea ?obolanilor, fără să ?tie că opera?iunea de colectare era catalizatorul pentru răspândirea ciumei bubonice.",
+      "readMore": "https://ro.wikipedia.org/wiki/Ciuma_(roman)",
+      "download": "https://1drv.ms/w/s!AgbJEwFyAz9FjsxJI-NqSm34dz15-w"
+    },
+    {
+      "id": 200,
+      "title": "Codul lui Da Vinci",
+      "author": "Dan Brown",
+      "isbn": "978-973-103-462-1",
+      "categoryId": 7,
+      "genre": "Politist / Istoric",
+      "rating": "4,5/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776521267_564fe249f5_n.jpg",
+      "publicationDate": "2003",
+      "originalTitle": "The Da Vinci Code",
+      "originalLanguage": "Engleză",
+      "description": "Cartea se deschide cu uciderea misterioasă a unui custode de la Luvru, chiar în interiorul muzeului. Jacques Saunieree fusese ultimul mare maestru al unei confră?ii secrete - Stare?ia Sionului - care păstrează un secret ce ar duce la distrugerea bisericii cre?tine.",
+      "readMore": "https://ro.wikipedia.org/wiki/Codul_lui_Da_Vinci_(roman)",
+      "download": "https://1drv.ms/b/s!AgbJEwFyAz9FjsxHYhTzZg1EkG9ipw"
+    },
+    {
+      "id": 300,
+      "title": "Un veac de singurătate",
+      "author": "Gabriel Garcia Marquez",
+      "isbn": "978-973-103-462-1",
+      "categoryId": 8,
+      "genre": "Ficțiune",
+      "rating": "4,6/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49775659558_8e3648c1af_n.jpg",
+      "publicationDate": "1967",
+      "originalTitle": "Cien años de soledad",
+      "originalLanguage": "Spaniolă",
+      "description": "Mulţi ani după aceea, în faţa plutonului de execuţie, colonelul Aureliano Buendia avea să-şi amintească de după-amiaza îndepărtată cînd tatăl său îl dusese să facă cunoştinţa cu gheaţa.",
+      "readMore": "https://ro.wikipedia.org/wiki/Un_veac_de_singur%C4%83tate",
+      "download": ""
+    },
+    {
+      "id": 400,
+      "title": "Plânsul lui Nietzsche",
+      "author": "Irwin D. Yalom",
+      "isbn": "973-28-0596-X",
+      "categoryId": 4,
+      "genre": "Nuvelă",
+      "rating": "4,2/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776521187_bdf8d0fd4b_n.jpg",
+      "publicationDate": "1992",
+      "originalTitle": "When Nietzsche wept",
+      "originalLanguage": "Engleză",
+      "description": "Ireveria lui Josef Breuer fu întreruptă de dangătul armonios al clopotelor de la San Salvatore. îşi scoase cea¬sul masiv de aur din buzunarul vestei. Ora nouă.",
+      "readMore": "https://en.wikipedia.org/wiki/When_Nietzsche_Wept_(novel)",
+      "download": ""
+    },
+    {
+      "id": 500,
+      "title": "Peștera",
+      "author": "José Saramago",
+      "isbn": "978-973-461-318-2",
+      "categoryId": 4,
+      "genre": "Nuvelă",
+      "rating": "4,2/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776190271_2825415d89_n.jpg",
+      "publicationDate": "2009",
+      "originalTitle": "A Caverna",
+      "originalLanguage": "Portugheză",
+      "description": "O familie de mestesugari, olari din tata-n fiu, traieste si iubeste in umbra Centrului, o constructie menita sa le asigure oamenilor fascinati de ea absolut totul, de la produse de consum pina la „senzatii naturale”: muscatura gerului, mingiierea soarelui,...",
+      "readMore": "https://en.wikipedia.org/wiki/The_Cave_(novel)",
+      "download": ""
+    },
+    {
+      "id": 600,
+      "title": "Umbră",
+      "author": "John Saul",
+      "isbn": "973-576-713-9",
+      "categoryId": 1,
+      "genre": "Horror",
+      "rating": "3,9/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776190311_1419caf952_n.jpg",
+      "publicationDate": "1992",
+      "originalTitle": "Shadows",
+      "originalLanguage": "Engleză",
+      "description": "In cea mai fascinanta creatie a sa, John Saul propune cititorilor o dilema: oare inzestrarea intelectuala iesita din comun constituie un avantaj sau un handicap? Numai un thriller psihologic, scris cu un nerv deosebit, putea trata o asemenea problema in toata complexitatea ei.",
+      "readMore": "https://ro.wikipedia.org/wiki/John_Saul",
+      "download": ""
+    },
+    {
+      "id": 700,
+      "title": "O mână de oase",
+      "author": "Stephen King",
+      "isbn": "978-068-485-350-5",
+      "categoryId": 1,
+      "genre": "Horror",
+      "rating": "4,5/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776521097_197815b820_n.jpg",
+      "publicationDate": "1998",
+      "originalTitle": "Bag of Bones",
+      "originalLanguage": "Engleză",
+      "description": "Scris la persoana întâi, romanul debutează cu moartea soției scriitorului-narator, Mike Noonan, moarte datorată unui atac cerebral. După moartea soției, cel care fusese până atunci unul dintre scriitorii foarte bine vânduți ai momentului intră într-o perioadă de blocaj,...",
+      "readMore": "https://ro.wikipedia.org/wiki/O_m%C3%A2n%C4%83_de_oase",
+      "download": ""
+    },
+    {
+      "id": 800,
+      "title": "Leagănul pisicii",
+      "author": "Kurt Vonnegut",
+      "isbn": "973-681-556-0",
+      "categoryId": 8,
+      "genre": "Ficțiune",
+      "rating": "4,4/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49776190256_147392dee2_n.jpg",
+      "publicationDate": "1963",
+      "originalTitle": "Cat's Cradle",
+      "originalLanguage": "Engleză",
+      "description": "Leaganul pisicii, unul dintre cele mai cunoscute romane ale lui Kurt Vonnegut, scris in aceeasi forma satirica ce l-a consacrat, este un comentariu asupra omului modern si a nebuniei lui. John, un tanar scriitor fascinat de Felix Hoenikker, asa-zisul creator al bombei atomice...",
+      "readMore": "https://ro.wikipedia.org/wiki/Leag%C4%83nul_pisicii",
+      "download": ""
+    },
+    {
+      "id": 900,
+      "title": "Sapiens - A brief history of humankind",
+      "author": "Yuval Noah Harari",
+      "isbn": "978-973-46-4888-7",
+      "categoryId": 9,
+      "genre": "Non-Fiction",
+      "rating": "4,8/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49801607026_0c469179a2_n.jpg",
+      "publicationDate": "2011",
+      "originalTitle": "קיצור תולדות האנושות",
+      "originalLanguage": "Ebraică",
+      "description": "Acum 100.000 de ani, pe pămînt existau cel puţin şase specii de oameni. Astăzi există una singură: noi, Homo sapiens. Ce s-a întîmplat cu celelalte? Şi cum am ajuns să fim stăpînii planetei? De la începuturile speciei noastre şi rolul pe care l-a jucat în ecosistemul global...",
+      "readMore": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind",
+      "download": ""
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "user": "Miruna M.",
+      "popularityId": 100,
+      "body": "Lorem lorem lorem..."
+    },
+    {
+      "id": 2,
+      "user": "Miruna M.",
+      "popularityId": 100,
+      "body": "Test test test..."
+    },
+    {
+      "id": 3,
+      "user": "Miruna M.",
+      "popularityId": 100,
+      "body": "Test test test..."
+    },
+    {
+      "id": 2,
+      "user": "Miruna M.",
+      "popularityId": 200,
+      "body": "Ipsum ipsum ipsum..."
+    },
+    {
+      "id": 3,
+      "user": "Miruna M.",
+      "popularityId": 300,
+      "body": "Dolor dolor dolor..."
+    },
+    {
+      "{\"ReviewTest\":\"O carte excelenta. Recomand!\"}": "",
+      "id": 4
+    },
+    {
+      "{\"username\":\"O carte excelenta. Recomand!\"}": "",
+      "id": 5
+    },
+    {
+      "{\"[object Object]\":\"O carte excelenta. Recomand!\"}": "",
+      "id": 6
+    },
+    {
+      "{\"user\":\"test\"}": "",
+      "id": 7
+    },
+    {
+      "{\"user\":\"ccc\"}": "",
+      "id": 8
+    }
+  ],
+  "popularity": [
+    {
+      "id": 100,
+      "Review": "Whatever..."
+    },
+    {
+      "id": 200,
+      "Review": "Whatever whatever..."
+    },
+    {
+      "id": 300,
+      "Review": "Whatever whatever whatever..."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "genre": "Horror"
+    },
+    {
+      "id": 2,
+      "genre": "Mistery & Thriller"
+    },
+    {
+      "id": 3,
+      "genre": "Roman"
+    },
+    {
+      "id": 4,
+      "genre": "Novel"
+    },
+    {
+      "id": 6,
+      "genre": "Dicționare"
+    },
+    {
+      "id": 7,
+      "genre": "Politist / Istoric"
+    },
+    {
+      "id": 8,
+      "genre": "Ficțiune"
+    },
+    {
+      "id": 9,
+      "genre": "Non-fiction"
+    }
+  ],
+  "users": [
+    {
+      "username": "Nico",
+      "email": "Nicki_mamu@yahoo.com",
+      "password": "aaa",
+      "retype-password": "aaa",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 1
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 2
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 3
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 4
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 5
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 6
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 7
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 8
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 9
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 10
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 11
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 12
+    }
+  ],
+  "profile": [],
+  "userLibrary": []
+}
