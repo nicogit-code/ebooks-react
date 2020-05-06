@@ -1,43 +1,78 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import UserContext from '../auth/UserContext';
 import BookCard from '../books/BookCard';
 import axios from 'axios';
 
-function UserLibrary() {
+import styles from './UserProfile.css';
 
-    let [userLibrary, setUserLibrary] = useState([]);
+function UserLibrary(onDelete) {
 
-    useEffect(() => {
-        getUserLib();
-    }, []);
-
-    console.log(userLibrary);
+    const { bookId } = useParams();
+    const [books, setBooks] = useState([]);
+    const [library, setLibrary] = useState([]);
+    const [ deleteItem, setDeleteItem ] = useState(null);
+    const { user } = useContext(UserContext);
 
     async function getUserLib() {
 
         try {
-            const library = await axios.get('/userLibrary', {params: { userId: 1 }}).then(res => res.data);
-            
-            const promise = library.map((book) => {
-                return axios.get('/books' + book.id)
-                .then(res => res.data);
-            });
+            const library = await axios.get('/userLibrary', { params: {userId: user.id} }).then(res => res.data);
 
-            const userBooks = await Promise.all(promise);
+            const promises = library.map(lib => axios('/books/' + lib.bookId).then(res => res.data));
+            console.warn({user, library})
+            const books = await Promise.all(promises);
+            const booksWithLibId = books.map((book, i) => ({...book, libId: library[i].id}) );
 
-            setUserLibrary(userBooks);
+            setLibrary(library);
+            setBooks(booksWithLibId);
+
+            // const promise = library.map((book) => {
+            //     return axios.get('/books/' + book.id)
+            //     .then(res => res.data);
+            // });
+
+            // const userBooks = await Promise.all(promise);
+
         }
         catch(e) {
             console.warn(e);
         }
     }
 
-    if(userLibrary) {
+    useEffect(() => { 
+        getUserLib(bookId);
+
+    }, []);
+
+    async function DeleteItem(e) {
+        const res = await axios.delete('/users?userLibrary' + e.currentTarget.getAttribute('data-item-id'));
+        onDelete(e.currentTarget.getAttribute('data-item-id'));
+        setDeleteItem(res.data);
+
+        console.log(res);
+    }
+
+    async function handleDelete(id) {
+        
+        console.log('s-a sters cartea', id);
+        try{
+            await axios.delete('/userLibrary/' + id, { 
+                data:id,
+        
+        }).then(setLibrary(library.filter(book => book.id !== Number(id)))); 
+        } catch(e) {
+            console.warn(e)
+        }
+    }
+console.log(books);
+    if(books) {
 
         return (
             <>
-                {/* {userLibrary.map((book, id) => < BookCard book={ book } key={book.id} />)} */}
-                <BookCard book={userLibrary}/>
-                <BookCard book={userLibrary}/>
+                {books.map(book => (
+                    <BookCard book={ book } onDelete={handleDelete} key={ book.id } />
+                ))}
             </>
         )
     }

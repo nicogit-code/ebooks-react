@@ -5,7 +5,6 @@
       "title": "Ciuma",
       "author": "Albert Camus",
       "isbn": "978-973-103-462-1",
-      "categoryId": 8,
       "genre": "Fictiune",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -22,7 +21,6 @@
       "title": "Codul lui Da Vinci",
       "author": "Dan Brown",
       "isbn": "978-973-103-462-1",
-      "categoryId": 7,
       "genre": "Politist / Istoric",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -39,7 +37,6 @@
       "title": "Un veac de singurătate",
       "author": "Gabriel Garcia Marquez",
       "isbn": "978-973-103-462-1",
-      "categoryId": 8,
       "genre": "Ficțiune",
       "rating": "4,6/5",
       "review": "Lorem ipsum dolor...",
@@ -56,7 +53,6 @@
       "title": "Plânsul lui Nietzsche",
       "author": "Irwin D. Yalom",
       "isbn": "973-28-0596-X",
-      "categoryId": 4,
       "genre": "Nuvelă",
       "rating": "4,2/5",
       "review": "Lorem ipsum dolor...",
@@ -73,7 +69,6 @@
       "title": "Peștera",
       "author": "José Saramago",
       "isbn": "978-973-461-318-2",
-      "categoryId": 4,
       "genre": "Nuvelă",
       "rating": "4,2/5",
       "review": "Lorem ipsum dolor...",
@@ -90,7 +85,6 @@
       "title": "Umbră",
       "author": "John Saul",
       "isbn": "973-576-713-9",
-      "categoryId": 1,
       "genre": "Horror",
       "rating": "3,9/5",
       "review": "Lorem ipsum dolor...",
@@ -107,7 +101,6 @@
       "title": "O mână de oase",
       "author": "Stephen King",
       "isbn": "978-068-485-350-5",
-      "categoryId": 1,
       "genre": "Horror",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -124,7 +117,6 @@
       "title": "Leagănul pisicii",
       "author": "Kurt Vonnegut",
       "isbn": "973-681-556-0",
-      "categoryId": 8,
       "genre": "Ficțiune",
       "rating": "4,4/5",
       "review": "Lorem ipsum dolor...",
@@ -156,54 +148,157 @@
   ],
   "reviews": [
     {
-      "id": 1,
-      "user": "Miruna M.",
+      "user": "Stefan Bogdan",
+      "date": "22-01-2020",
       "popularityId": 100,
-      "body": "Lorem lorem lorem..."
+      "body": "Am citit cartea astă vară, la mare, întins pe rogojină, cu sentimentul de compasiune pentru ce se întâmplă altora; se întâmplă ca astăzi să devenim personaje...E mai actuală decât oricând, mai ales că e o carte despre implicare, nu despre pasivitate; și despre răsplată, despre viață.",
+      "id": 1
     },
     {
-      "id": 2,
-      "user": "Miruna M.",
+      "user": "Gautam Mridha",
       "popularityId": 100,
-      "body": "Test test test..."
+      "date": "14-04-2020",
+      "body": "Outstanding... never loses its relevance... Corona once again reminds us The Plague is not a novel at all its a reality so don't think human is the ultimate boss on the earth.",
+      "id": 2
     },
     {
-      "id": 3,
-      "user": "Miruna M.",
+      "user": "Patricia Hussey",
+      "date": "02-05-2020",
       "popularityId": 100,
-      "body": "Test test test..."
+      "body": "The novel is so relevant in our viral world. It s a novel that carries your thinking to another level. I read it first in the original language and was elevated by it. it loses some of its philosophical import, however, in translation.",
+      "id": 3
     },
     {
-      "id": 2,
       "user": "Miruna M.",
+      "date": "22-09-2019",
       "popularityId": 200,
-      "body": "Ipsum ipsum ipsum..."
-    },
-    {
-      "id": 3,
-      "user": "Miruna M.",
-      "popularityId": 300,
-      "body": "Dolor dolor dolor..."
-    },
-    {
-      "{\"ReviewTest\":\"O carte excelenta. Recomand!\"}": "",
+      "body": "Cred ca fiecare om are dreptul sa creada ce si cum vrea, insa nu pot sa nu admir modul minunat in care Dan Brown a imbinat elemente reale si fantastice si a obtinut un roman atat de veridic incat a generat atatea controverse.",
       "id": 4
     },
     {
-      "{\"username\":\"O carte excelenta. Recomand!\"}": "",
+      "user": "Karan Chheda",
+      "date": "04-02-2020",
+      "popularityId": 200,
+      "body": "I haven't seen the movie but the book is outstanding. The amount of research Mr. Brown must have done is above our imagination. The way he introduces us to different secret societies is just fascinating adventure.",
       "id": 5
     },
     {
-      "{\"[object Object]\":\"O carte excelenta. Recomand!\"}": "",
+      "user": "Aya Alzaga",
+      "date": "15-01-2020",
+      "popularityId": 200,
+      "body": "A well crafted and thought-provoking movie. I enjoyed the holy grail quest of Robert Langdon. Dan Brown is such a brilliant novelist, writer and researcher. No wonder this movie was banned because of too much controversy when at the end of the day, people will always believe what they want to believe.",
       "id": 6
     },
     {
-      "{\"user\":\"test\"}": "",
+      "user": "Răzvan Zamfirescu",
+      "date": "28-08-20219",
+      "popularityId": 300,
+      "body": "Un veac de singurătate este pentru literatură ce este Nothing else matters pentru muzică: toate lumea a citit-o/ascultat-o, majoritatea cititorilor/ascultătorilor o declară extraordinară, dar puțini sunt interesați de restul operelor scriitorului/muzicienilor pentru că puțini sunt cei care se pot declara fanii genului din care cartea/piesa face parte.",
       "id": 7
     },
     {
-      "{\"user\":\"ccc\"}": "",
+      "body": "Book opened a dream in reality, around a fictitious city, fantastic things happen, and the reader s imagination gets wings to fly high in the sky, finally lands on a mystique land where she realises nothing.",
+      "user": "Vijaya Kumar",
+      "date": "14-05-2019",
+      "popularityId": 300,
       "id": 8
+    },
+    {
+      "user": "Ian Sugarman",
+      "popularityId": 300,
+      "date": "21-03-2020",
+      "body": "I live in Iran and all these differences in time, space and culture did not prevent me from wearing the boots of a colonel and not walking in the streets of the Turks while reading this book. This book is suitable for all tastes who want to read novels.  When I suggest to remind the characters and their position together, prepare your paper and pen to set the chart.",
+      "id": 9
+    },
+    {
+      "user": "Nico",
+      "popularityId": 900,
+      "date": "02-05-2020",
+      "body": "Fascinating.I recommend reading this with an open mind. It seems many who give this book low reviews are particularly challenged by the authors stance.",
+      "id": 10
+    },
+    {
+      "user": "Alina M.",
+      "popularityId": 900,
+      "date": "12-02-2020",
+      "body": "I am in the process of reading it, and I am totally captivated. It is an easy and pleasant read with many 'aha' moments all along. It definitely puts things into perspective, and  has the power to shake strong rooted beliefs.",
+      "id": 11
+    },
+    {
+      "user": "Nico",
+      "popularityId": 200,
+      "date": "2020-05-06",
+      "body": "O carte minunata, merita citita si recitita!!!",
+      "id": 14
+    },
+    {
+      "user": "Alina M.",
+      "popularityId": 400,
+      "date": "12-02-2020",
+      "body": "I am in the process of reading it, and I am totally captivated. It is an easy and pleasant read with many 'aha' moments all along. It definitely puts things into perspective, and  has the power to shake strong rooted beliefs.",
+      "id": 15
+    },
+    {
+      "user": "Alina M.",
+      "popularityId": 500,
+      "date": "12-02-2020",
+      "body": "I am in the process of reading it, and I am totally captivated. It is an easy and pleasant read with many 'aha' moments all along. It definitely puts things into perspective, and  has the power to shake strong rooted beliefs.",
+      "id": 16
+    },
+    {
+      "user": "Nico",
+      "popularityId": 600,
+      "date": "02-05-2020",
+      "body": "Fascinating.I recommend reading this with an open mind. It seems many who give this book low reviews are particularly challenged by the authors stance.",
+      "id": 17
+    },
+    {
+      "user": "Nico",
+      "popularityId": 700,
+      "date": "02-05-2020",
+      "body": "Fascinating.I recommend reading this with an open mind. It seems many who give this book low reviews are particularly challenged by the authors stance.",
+      "id": 18
+    },
+    {
+      "user": "Ian Sugarman",
+      "popularityId": 800,
+      "date": "21-03-2020",
+      "body": "I live in Iran and all these differences in time, space and culture did not prevent me from wearing the boots of a colonel and not walking in the streets of the Turks while reading this book. This book is suitable for all tastes who want to read novels.  When I suggest to remind the characters and their position together, prepare your paper and pen to set the chart.",
+      "id": 19
+    },
+    {
+      "user": "Mamu",
+      "popularityId": 100,
+      "body": "O carte excelenta. Recomand!",
+      "id": 22
+    },
+    {
+      "body": "aaaa1",
+      "date": "2020-05-06",
+      "user": "Nico",
+      "popularityId": 100,
+      "id": 23
+    },
+    {
+      "body": "testing",
+      "date": "2020-05-06",
+      "user": "Nico",
+      "popularityId": 400,
+      "id": 24
+    },
+    {
+      "body": "testing",
+      "date": "2020-05-06",
+      "user": "Nico",
+      "popularityId": 300,
+      "id": 25
+    },
+    {
+      "body": "testing",
+      "date": "2020-05-06",
+      "user": "Nico",
+      "popularityId": 100,
+      "id": 26
     }
   ],
   "popularity": [
@@ -218,40 +313,30 @@
     {
       "id": 300,
       "Review": "Whatever whatever whatever..."
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "genre": "Horror"
     },
     {
-      "id": 2,
-      "genre": "Mistery & Thriller"
+      "id": 400,
+      "Review": "Whatever whatever whatever..."
     },
     {
-      "id": 3,
-      "genre": "Roman"
+      "id": 500,
+      "Review": "Whatever whatever whatever..."
     },
     {
-      "id": 4,
-      "genre": "Novel"
+      "id": 600,
+      "Review": "Whatever whatever whatever..."
     },
     {
-      "id": 6,
-      "genre": "Dicționare"
+      "id": 700,
+      "Review": "Whatever whatever whatever..."
     },
     {
-      "id": 7,
-      "genre": "Politist / Istoric"
+      "id": 800,
+      "Review": "Whatever whatever whatever..."
     },
     {
-      "id": 8,
-      "genre": "Ficțiune"
-    },
-    {
-      "id": 9,
-      "genre": "Non-fiction"
+      "id": 900,
+      "Review": "Whatever whatever whatever..."
     }
   ],
   "users": [
@@ -261,6 +346,13 @@
       "password": "aaa",
       "retype-password": "aaa",
       "id": 1
+    },
+    {
+      "username": "Mamu",
+      "email": "mamu_ovi@yahoo.com",
+      "password": "bbb",
+      "retype-password": "bbb",
+      "id": 2
     }
   ],
   "login": [
@@ -268,63 +360,13 @@
       "username": "Nico",
       "password": "aaa",
       "id": 1
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 2
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 3
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 4
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 5
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 6
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 7
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 8
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 9
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 10
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 11
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 12
     }
   ],
-  "profile": [],
-  "userLibrary": []
+  "userLibrary": [
+    {
+      "id": 3,
+      "bookId": 300,
+      "userId": 2
+    }
+  ]
 }

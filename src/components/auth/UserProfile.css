@@ -1,20 +1,24 @@
-.formBody {
-    box-sizing: border-box;
-    box-shadow: 0 0 5px #888;
-    position: relative;
-    text-align: center;
-    background-color:rgb(219, 57, 84, 0.07);
-    border: 1px solid rgb(219, 57, 84, 0.5);
-    border-radius: 5px;
-    margin: 5rem 10rem;
+.wrapper {
+    display: flex;
+    margin: 1rem;
     padding: 2rem;
+}
+
+.list {
+    display: inline-block;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.list ul {
+    list-style: none;
 }
 
 .button {
     background-color: transparent;
     border: 1px solid rgb(219, 57, 84);
     border-radius: 10px;
-    display: inline-block;
     color: rgb(219, 57, 84);
     padding: 4px 10px;
     margin-right: 1rem;
@@ -22,7 +26,6 @@
 
 .button:hover {
     background-color: rgb(219, 57, 84);
-    color: rgb(255, 255, 255);
 }
 
 a {
@@ -32,10 +35,4 @@ a {
 a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-h1,
-{
-  padding: 8px 10px;
-  align-self: center;
 }

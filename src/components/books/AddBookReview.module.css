@@ -41,3 +41,10 @@ a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+/* .formControl {
+    width: 300px;
+    resize: vertical;
+    overflow: scroll;
+    padding-left: 3px;
+} */

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './shared/Header';
 import BookList from './books/BookList';
 import BookDetails from './books/BookDetails';
-import EditBook from './books/EditBook';
+import AddBookReview from './books/AddBookReview';
+import EditBookReview from './books/EditBookReview';
 
 import Register from './auth/Register';
 import Login from './auth/Login';
@@ -47,8 +48,12 @@ function App() {
               <BookDetails/>
             </Route>
             
-            <Route path="/books/edit/:bookId">
-              <EditBook/>
+            <Route path="/books/add/:bookId">
+              <AddBookReview/>
+            </Route>
+
+            <Route path="/books/edit/:reviewId">
+              <EditBookReview/>
             </Route>
 
             <Route path="/register">
@@ -62,6 +67,10 @@ function App() {
             <Route path="/profile">
               <UserProfile/>
             </Route>
+
+            {/* <Route path="/userlibrary">
+              <AddToLibrary/>
+            </Route> */}
         </div>
       </BrowserRouter>
     </UserContext.Provider>

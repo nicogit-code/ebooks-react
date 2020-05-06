@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import UserContext from './UserContext';
+import { Switch, Redirect } from 'react-router-dom';
+
 import styles from './Register.module.css';
 
 
@@ -123,9 +125,15 @@ function Register() {
                 : null)}
 
                 {(isSuccessfull ?
+                <>
                     <div className="alert alert-success" role="alert">
                         Contul tau a fost creat cu succes!
                     </div>
+                    <Switch>
+                        {/* <Route path='/login' component={UserProfile}/> */}
+                        <Redirect from='/register' to ='/'/>
+                    </Switch>
+                </>
                 : null)}
 
                 <form onSubmit={ handleSubmit }>

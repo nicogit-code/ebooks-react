@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import UserContext from './UserContext';
+import { Switch, Redirect } from 'react-router-dom';
 
 import styles from './Login.module.css';
 
@@ -98,9 +99,15 @@ export default function Login() {
                 : null)}
 
                 {(isSuccessfull ?
+                <>
                     <div className="alert alert-success" role="alert">
                         Te-ai autentificat cu succes!
                     </div>
+                    <Switch>
+                        <Redirect from='/login' to ='/profile/'/>
+                    </Switch>
+                    
+                </>
                 : null)}
                 <form onSubmit={ handleSubmit }>
 
@@ -167,52 +174,6 @@ export default function Login() {
                 </form>
             </div>
         </div>
-
-
-        // <div className={styles.formBody}>
-        //     <div className={ styles.formContainer }>
-        //         <form action="/action_page.php">
-        //         <h2>Login</h2>
-        //             <div className="row">
-                        
-
-        //                 <div className="col">
-        //                     <a href="/" className="fb btn">
-        //                     <i className="fa fa-facebook fa-fw"></i> Login with Facebook
-        //                     </a>
-        //                     <a href="/" className="twitter btn">
-        //                     <i className="fa fa-twitter fa-fw"></i> Login with Twitter
-        //                     </a>
-        //                     <a href="/" className="google btn"><i className="fa fa-google fa-fw">
-        //                     </i> Login with Google+
-        //                     </a>
-        //                 </div>
-
-        //                 <div className="col">
-        //                     <div className="hide-md-lg">
-        //                         <p>Or sign in manually:</p>
-        //                     </div>
-
-        //                     <input type="text" name="username" placeholder="Username" required/>
-        //                     <input type="password" name="password" placeholder="Password" required/>
-        //                     <input type="submit" value="Login"/>
-        //                 </div>
-                    
-        //             </div>
-        //         </form>
-        //     </div>
-
-        //     <div className="bottom-container">
-        //         <div className="row">
-        //             <div className="col">
-        //                 <a href="/" className="btn">Sign up</a>
-        //             </div>
-        //             <div className="col">
-        //                 <a href="/" className="btn">Forgot password?</a>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
         
     )
 }

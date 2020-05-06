@@ -2,21 +2,21 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from '../auth/UserContext';
-import styles from './EditBook.module.css'
+import styles from './AddBookReview.module.css'
 
-export default function EditBook() {
+export default function AddToLibrary() {
     const { bookId } = useParams();
+    // const { userId } = useParams();
     const [book, setBook] = useState(null);
+    const [library, setLibrary] = useState(null);
     const { user } = useContext(UserContext);
     const[isSuccessfull, setSuccessfull] = useState(false);
 
 
-    // setSuccessfull(false);
-
     async function getBookById(id) {
         try {
             const res = await axios('/books/' + id);
-            console.log(res);
+            // console.log(res);
             setBook(res.data);
         } catch(e) {
             console.warn(e);
@@ -32,27 +32,29 @@ export default function EditBook() {
             //     data: JSON.stringify({ 'ReviewTest': book.review }),
             // });
 
-            const res = await axios('/reviews/', {
+            // const res = await axios('/reviews/', {
+            //     method: 'POST',
+            //     headers: 'test',
+            //     data: { 'body': book.review, 'id': '', 'user': '', 'popularityId': book.id },
+            // });
+            
+            const res = await axios('/users?userLibrary=' + user.id, {
                 method: 'POST',
                 headers: ({title: user}),
-                data: JSON.stringify({ 'Review': book.review  }),
+                data:{ 'user': user.username , 'popularityId': book.id, 'body': book.id },
             });
-            
-            
-
-            // const userReview = await Promise.all(res);
 
             setSuccessfull(true);
 
-            console.log(res);
-            // setBook(res.data);
+            // console.log(res);
+            setLibrary(res.data);
         } catch(e) {
             console.warn(e);
         }
     }
 
     function handleInputChange(e) {
-        setBook({ ...book, review: e.currentTarget.value});
+        setBook({ ...library, library: e.currentTarget.value});
     }
     
     useEffect(() => { 
@@ -63,25 +65,25 @@ export default function EditBook() {
         return <h2>Loading...</h2>;
     }
 
-    if(!user) {
-    return <p>Pentru a adauga un review, trebuie sa fii autentificat</p>;
-    }
+    // if(!user) {
+    // return <p>Pentru a adauga un review, trebuie sa fii autentificat</p>;
+    // }
 
     return (
         <div className={styles.formBody}>
             {(isSuccessfull ?
                 <div className="alert alert-success" role="alert">
-                    Review-ul tau a fost salvat. Multumim!
+                    Cartea a fost salvata in biblioteca ta.
                 </div>
                 // <button type="submit" className={ styles.button }>Inapoi</button>
             : null)}
 
 
-        <h2>Ai citit-o? Scrie un review!</h2>
+        <h2>Adauga in lista de favorite</h2>
 
-            <form onSubmit={ handleSubmit } action='/reviews/' method="POST">
+            <form onSubmit={ handleSubmit }>
                 <div className="form-group">
-                    <label htmlFor="reviews">Review</label>
+                    <label htmlFor="reviews">Biblioteca ta</label>
                     <input 
                     onChange={ handleInputChange }
                     // value={ book.review } 

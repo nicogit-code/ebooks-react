@@ -1,5 +1,6 @@
 .navBar {
   background: rgb(219, 57, 84);
+  box-shadow: 0 0 7px rgb(104, 103, 103);
   color: white;
   display: flex;
   align-items: center;
@@ -36,13 +37,14 @@
 
 .searchBar {
   display: inline-block;
+  /* background-image: url('searchicon.png'); */
   border-radius: 10px;
   border: 1px solid white;
   margin: 22px;
   text-align: left;
   padding-left: 7px;
   font-size: small;
-}
+  }
 
 .actions {
   margin-left: auto;

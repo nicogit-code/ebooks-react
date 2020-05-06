@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './Filter.css';
-import BookCard from '../books/BookCard';
+// import BookCard from '../books/BookCard';
 
 export default function Filter() {
     const [ items, setItems ] = useState([]);

@@ -7,7 +7,7 @@ import BookCard from './BookCard';
 // import Filter from '../filter/Filter';
 
 function BookList() {
-    let [books, setBooks] = useState([]);
+    let [book, setBook] = useState([]);
 
     function useQuery() {
         return new URLSearchParams(useLocation().search);
@@ -20,7 +20,7 @@ function BookList() {
 
     async function getBooks() {
         const res = await axios('/books');
-            setBooks(res.data)
+            setBook(res.data)
     }
 
     function search(book) {
@@ -28,11 +28,11 @@ function BookList() {
         return title.includes(q.toLowerCase())
     }
 
-    if(books) {
+    if(book) {
         return (
-            <div className={styles.container }>
+            <div className={ styles.container }>
                 <div className={ styles.list }>
-                    {books
+                    {book
                     .filter(search)
                     .map(book => <BookCard book={ book } key={ book.id } />) }
                 </div>
