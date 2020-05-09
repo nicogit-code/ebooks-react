@@ -29,7 +29,7 @@ function BookDetails() {
     async function handleAddToFavorites() {
         const res = await axios.post('/userLibrary', { userId: user.id, bookId: book.id});
         setSuccessfull(true);
-        setTimeout(() => setRedirect(true), 2000);
+        setTimeout(() => setRedirect(true), 1000);
     }
     
     useEffect(() => { 
@@ -72,9 +72,6 @@ function BookDetails() {
                             {(user ?
                                 <Link className={ styles.button } to={"/books/add/" + book.id }>Adaugă review</Link>
                             : null)}
-
-        
-                            
                         </div>
                         <div>
                             <img className={ styles.cardImg } src={ book.cover } component="img" alt="Book Cover"/>

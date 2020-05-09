@@ -5,6 +5,7 @@
       "title": "Ciuma",
       "author": "Albert Camus",
       "isbn": "978-973-103-462-1",
+      "categoryId": 8,
       "genre": "Fictiune",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -21,6 +22,7 @@
       "title": "Codul lui Da Vinci",
       "author": "Dan Brown",
       "isbn": "978-973-103-462-1",
+      "categoryId": 7,
       "genre": "Politist / Istoric",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -37,6 +39,7 @@
       "title": "Un veac de singurătate",
       "author": "Gabriel Garcia Marquez",
       "isbn": "978-973-103-462-1",
+      "categoryId": 8,
       "genre": "Ficțiune",
       "rating": "4,6/5",
       "review": "Lorem ipsum dolor...",
@@ -53,6 +56,7 @@
       "title": "Plânsul lui Nietzsche",
       "author": "Irwin D. Yalom",
       "isbn": "973-28-0596-X",
+      "categoryId": 4,
       "genre": "Nuvelă",
       "rating": "4,2/5",
       "review": "Lorem ipsum dolor...",
@@ -69,6 +73,7 @@
       "title": "Peștera",
       "author": "José Saramago",
       "isbn": "978-973-461-318-2",
+      "categoryId": 4,
       "genre": "Nuvelă",
       "rating": "4,2/5",
       "review": "Lorem ipsum dolor...",
@@ -85,6 +90,7 @@
       "title": "Umbră",
       "author": "John Saul",
       "isbn": "973-576-713-9",
+      "categoryId": 1,
       "genre": "Horror",
       "rating": "3,9/5",
       "review": "Lorem ipsum dolor...",
@@ -101,6 +107,7 @@
       "title": "O mână de oase",
       "author": "Stephen King",
       "isbn": "978-068-485-350-5",
+      "categoryId": 1,
       "genre": "Horror",
       "rating": "4,5/5",
       "review": "Lorem ipsum dolor...",
@@ -117,6 +124,7 @@
       "title": "Leagănul pisicii",
       "author": "Kurt Vonnegut",
       "isbn": "973-681-556-0",
+      "categoryId": 8,
       "genre": "Ficțiune",
       "rating": "4,4/5",
       "review": "Lorem ipsum dolor...",
@@ -143,6 +151,125 @@
       "originalLanguage": "Ebraică",
       "description": "Acum 100.000 de ani, pe pămînt existau cel puţin şase specii de oameni. Astăzi există una singură: noi, Homo sapiens. Ce s-a întîmplat cu celelalte? Şi cum am ajuns să fim stăpînii planetei? De la începuturile speciei noastre şi rolul pe care l-a jucat în ecosistemul global...",
       "readMore": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind",
+      "download": ""
+    },
+    {
+      "id": 1000,
+      "title": "JS - Types and Grammar",
+      "author": "Kyle Sympson",
+      "isbn": "978-1-491-90419-0",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,9/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49867778696_4b8d43c11d_n.jpg",
+      "publicationDate": "2015",
+      "originalTitle": "You don`t know JavaScript | JS - Types and Grammar",
+      "originalLanguage": "Engleză",
+      "description": "While flickering mouse trails and annoying popup prompts may be where JavaScript started, nearly two decades later, the technology and capability of JavaScript has grown many orders of magnitude, and few doubt its importance at the heart of the world’s most widely available software platform: the Web.",
+      "readMore": "http://oreilly.com/catalog/errata.csp?isbn=9781491904190",
+      "download": ""
+    },
+    {
+      "id": 1100,
+      "title": "JS - Up & Going",
+      "author": "Kyle Sympson",
+      "isbn": "978-1-491-92446-4",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,9/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49867243448_941852e8eb_n.jpg",
+      "publicationDate": "2015",
+      "originalTitle": "You don`t know JavaScript | JS - Types and Grammar",
+      "originalLanguage": "Engleză",
+      "description": "When you strive to comprehend your code, you create better work and become better at what you do. The code isn’t just your job anymore, it’s your craft.",
+      "readMore": "http://oreilly.com/catalog/errata.csp?isbn=9781491924464",
+      "download": ""
+    },
+    {
+      "id": 1200,
+      "title": "The HTML Handbook",
+      "author": "Flavio Copes",
+      "isbn": "-",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,7/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49867779161_bc58a0d1fa_n.jpg",
+      "publicationDate": "2018",
+      "originalTitle": "The HTML Handbook",
+      "originalLanguage": "Engleză",
+      "description": "Yet lots of things are obscure to many people. Me included. I wrote this handbook to help my understanding of the topic, because when I need to explain something, I better make sure I first know the thing inside out.",
+      "readMore": "https://flaviocopes.com",
+      "download": ""
+    },
+    {
+      "id": 1300,
+      "title": "The CSS Handbook",
+      "author": "Flavio Copes",
+      "isbn": "-",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,7/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49868086602_d57e6af508_n.jpg",
+      "publicationDate": "2018",
+      "originalTitle": "The CSS Handbook",
+      "originalLanguage": "Engleză",
+      "description": "Even if you don't write CSS for a living, knowing how CSS works can help save you some headaches when you need to understand it from time to time, for example while tweaking a web page.",
+      "readMore": "https://flaviocopes.com",
+      "download": ""
+    },
+    {
+      "id": 1400,
+      "title": "The JavaScript Handbook",
+      "author": "Flavio Copes",
+      "isbn": "-",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,8/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49867873801_5528825252_n.jpg",
+      "publicationDate": "2018",
+      "originalTitle": "The JavaScript Handbook",
+      "originalLanguage": "Engleză",
+      "description": "JavaScript is now also the language powering databases and many more applications, and it's even possible to develop embedded applications, mobile apps, TV sets apps and much more. What started as a tiny language inside the browser is now the most popular language in the world.",
+      "readMore": "https://flaviocopes.com",
+      "download": ""
+    },
+    {
+      "id": 1500,
+      "title": "The React Handbook",
+      "author": "Flavio Copes",
+      "isbn": "-",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,8/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49868087862_590ef62432_n.jpg",
+      "publicationDate": "2018",
+      "originalTitle": "The React Handbook",
+      "originalLanguage": "Engleză",
+      "description": "Developed at Facebook and released to the world in 2013, it drives some of the most widely used apps, powering Facebook and Instagram among countless other applications. Its primary goal is to make it easy to reason about an interface and its state at any point in time, by dividing the UI into a collection of components.",
+      "readMore": "https://flaviocopes.com",
+      "download": ""
+    },
+    {
+      "id": 1600,
+      "title": "Eloquent JavaScript - 3rd edition",
+      "author": "Marijn Haverbeke",
+      "isbn": "978-1-593-27951-6",
+      "categoryId": 10,
+      "genre": "Programare/IT",
+      "rating": "4,8/5",
+      "review": "Lorem ipsum dolor...",
+      "cover": "https://live.staticflickr.com/65535/49870441131_40e53a1916_n.jpg",
+      "publicationDate": "2018",
+      "originalTitle": "Eloquent JavaScript - 3rd edition",
+      "originalLanguage": "Engleză",
+      "description": "This is a book about instructing computers. Computers are about as common as screwdrivers today, but they are quite a bit more complex, and making them do what you want them to do isn’t always easy.",
+      "readMore": "https://flaviocopes.com",
       "download": ""
     }
   ],
@@ -273,70 +400,126 @@
       "id": 22
     },
     {
-      "body": "aaaa1",
-      "date": "2020-05-06",
       "user": "Nico",
-      "popularityId": 100,
+      "popularityId": 1000,
+      "date": "2020-05-06",
+      "body": "Foarte bine structurata, excelent explicat!",
       "id": 23
     },
     {
-      "body": "testing",
-      "date": "2020-05-06",
-      "user": "Nico",
-      "popularityId": 400,
+      "user": "Simon Smith",
+      "popularityId": 1100,
+      "date": "2020-05-07",
+      "body": "Foarte bine structurata, excelent explicat!",
       "id": 24
     },
     {
-      "body": "testing",
-      "date": "2020-05-06",
-      "user": "Nico",
-      "popularityId": 300,
+      "user": "Andrei C",
+      "popularityId": 1200,
+      "date": "2020-05-07",
+      "body": "Foarte bine structurata, informatii actuale!",
       "id": 25
     },
     {
-      "body": "testing",
-      "date": "2020-05-06",
-      "user": "Nico",
-      "popularityId": 100,
+      "user": "John Simmons",
+      "popularityId": 1300,
+      "date": "2020-05-02",
+      "body": "Great book!",
       "id": 26
+    },
+    {
+      "user": "Nico",
+      "popularityId": 1400,
+      "date": "2020-04-06",
+      "body": "Foarte bine structurata, informatii actuale!",
+      "id": 27
+    },
+    {
+      "user": "Mamu",
+      "popularityId": 1500,
+      "date": "2020-02-16",
+      "body": "Foarte bine structurata si documentata.",
+      "id": 28
+    },
+    {
+      "user": "Nithin Krishna",
+      "popularityId": 1600,
+      "date": "2019-09-10",
+      "body": "This is no ordinary javascript book. This book if read right (Do all the exercises) will give you great insight into functional thinking, which will help you with any functional programming language. A must read for every computer scientist.",
+      "id": 29
+    },
+    {
+      "user": "Dan",
+      "popularityId": 1600,
+      "date": "2019-09-10",
+      "body": "I would recommend this book for anyone who works with JavaScript. For a beginner, I would pair it with a book on programming fundamentals and get started coding literally anything.",
+      "id": 30
     }
   ],
   "popularity": [
     {
       "id": 100,
-      "Review": "Whatever..."
+      "Review": ""
     },
     {
       "id": 200,
-      "Review": "Whatever whatever..."
+      "Review": ""
     },
     {
       "id": 300,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 400,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 500,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 600,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 700,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 800,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
     },
     {
       "id": 900,
-      "Review": "Whatever whatever whatever..."
+      "Review": ""
+    },
+    {
+      "id": 1000,
+      "Review": ""
+    },
+    {
+      "id": 1100,
+      "Review": ""
+    },
+    {
+      "id": 1200,
+      "Review": ""
+    },
+    {
+      "id": 1300,
+      "Review": ""
+    },
+    {
+      "id": 1400,
+      "Review": ""
+    },
+    {
+      "id": 1500,
+      "Review": ""
+    },
+    {
+      "id": 1600,
+      "Review": ""
     }
   ],
   "users": [
@@ -360,13 +543,76 @@
       "username": "Nico",
       "password": "aaa",
       "id": 1
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 2
+    },
+    {
+      "username": "Nico",
+      "password": "aaa",
+      "id": 3
     }
   ],
   "userLibrary": [
     {
-      "id": 3,
+      "userId": 2,
+      "bookId": 100,
+      "id": 3
+    },
+    {
+      "userId": 2,
       "bookId": 300,
-      "userId": 2
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "bookId": 600,
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "bookId": 100,
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "genre": "Horror"
+    },
+    {
+      "id": 2,
+      "genre": "Mister & Thriller"
+    },
+    {
+      "id": 3,
+      "genre": "Roman"
+    },
+    {
+      "id": 4,
+      "genre": "Nuvelă"
+    },
+    {
+      "id": 6,
+      "genre": "Dicițonare"
+    },
+    {
+      "id": 7,
+      "genre": "Polițist / Istoric"
+    },
+    {
+      "id": 8,
+      "genre": "Ficțiune"
+    },
+    {
+      "id": 9,
+      "genre": "Non-fiction"
+    },
+    {
+      "id": 10,
+      "genre": "Programare"
     }
   ]
 }

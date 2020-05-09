@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 import UserContext from '../auth/UserContext';
 import BookCard from '../books/BookCard';
 import axios from 'axios';
 
-import styles from './UserProfile.css';
+// import styles from './UserProfile.css';
 
 function UserLibrary(onDelete) {
 
@@ -26,16 +26,7 @@ function UserLibrary(onDelete) {
 
             setLibrary(library);
             setBooks(booksWithLibId);
-
-            // const promise = library.map((book) => {
-            //     return axios.get('/books/' + book.id)
-            //     .then(res => res.data);
-            // });
-
-            // const userBooks = await Promise.all(promise);
-
-        }
-        catch(e) {
+        } catch(e) {
             console.warn(e);
         }
     }
@@ -61,19 +52,30 @@ function UserLibrary(onDelete) {
                 data:id,
         
         }).then(setLibrary(library.filter(book => book.id !== Number(id)))); 
+        setTimeout(() => setDeleteItem(true), 200);
         } catch(e) {
             console.warn(e)
         }
     }
-console.log(books);
+
     if(books) {
 
         return (
+            <div className="wrapper">
+            {(deleteItem ?
+                <>
+                    <div className="alert alert-success" role="alert">
+                        Modificările tale a fost salvate. Mulțumim!
+                    </div>
+                    <Redirect to='/profile'/>
+                </>
+                : null)}
             <>
                 {books.map(book => (
                     <BookCard book={ book } onDelete={handleDelete} key={ book.id } />
                 ))}
             </>
+            </div>
         )
     }
 

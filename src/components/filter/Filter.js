@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import styles from './Filter.css';
+import { useHistory } from 'react-router-dom';
 // import BookCard from '../books/BookCard';
 
 export default function Filter() {
     const [ items, setItems ] = useState([]);
     const [ search, setSearch ] = useState('');
-    // let [books, setBooks] = useState([]);
 
     async function makeRequest() {
 
@@ -25,15 +24,14 @@ export default function Filter() {
 
     return (
         <>
-        <div className={ styles.filterArea }>
-            {/* <h5>Caută titlu</h5> */}
-            <input onChange={ (e) => setSearch(e.currentTarget.value) } value={ search } placeholder="Search"/>
+        <div className="filter">
+            <h5>Caută</h5>
+            <input onChange={ (e) => setSearch(e.currentTarget.value) } value={ search } placeholder="Caută după categorie"/>
             { items 
             .filter(book => book.title.includes(search))
             .map(book => <p key={ book.id }>{ book.title }</p>)
             }
         </div>
-
         {/* <div>
         { items.length ? 
             items

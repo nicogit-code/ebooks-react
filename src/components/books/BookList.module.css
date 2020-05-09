@@ -1,3 +1,8 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .list {
     margin: 1rem;
     padding: 2rem;
@@ -5,6 +10,11 @@
     flex-wrap: wrap;
     /* justify-content: center; */
     /* align-items: center; */
+}
+
+.filter {
+    padding: 1rem 2rem;
+    font-size: small;
 }
 
 

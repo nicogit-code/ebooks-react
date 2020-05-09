@@ -7,6 +7,7 @@ import BookList from './books/BookList';
 import BookDetails from './books/BookDetails';
 import AddBookReview from './books/AddBookReview';
 import EditBookReview from './books/EditBookReview';
+import Dictionary from './dictionary/Dictionary';
 
 import Register from './auth/Register';
 import Login from './auth/Login';
@@ -18,12 +19,10 @@ import axios from 'axios';
 
 import { apiUrl } from '../api/Api';
 
-
-// import './App.module.css';
 import styles from './App.module.css';
 
 axios.defaults.baseURL = apiUrl;
-
+// axios.defaults.baseURL = apiDict;
 
 function App() {
   const [user, setUser] = useState(null);
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <UserContext.Provider value={ { user, setUser } }>
-      <BrowserRouter>
+      <BrowserRouter >
         <Header user="Nico" />
         <div className={styles.container} >
             <Route exact path="/">
@@ -68,9 +67,9 @@ function App() {
               <UserProfile/>
             </Route>
 
-            {/* <Route path="/userlibrary">
-              <AddToLibrary/>
-            </Route> */}
+            <Route path="/words">
+              <Dictionary/>
+            </Route>
         </div>
       </BrowserRouter>
     </UserContext.Provider>

@@ -30,7 +30,6 @@ function UserProfile() {
 
     if(user) {
         return(
-            <div className="row">
                 <div className={ styles.wrapper }>
                     <h4>Nume utilizator: { user.username }</h4>
                     <p>Biblioteca ta:</p>
@@ -39,7 +38,6 @@ function UserProfile() {
                         {/* <BookCard book={userLibrary}/> */}
                     </div>
                 </div>
-            </div>
         );
     } else {
             return <h2>Loading...</h2>

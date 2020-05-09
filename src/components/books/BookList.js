@@ -4,7 +4,8 @@ import {useLocation} from 'react-router-dom';
 
 import styles from './BookList.module.css';
 import BookCard from './BookCard';
-// import Filter from '../filter/Filter';
+// import Weather from '../weather/Weather';
+import Dictionary from '../dictionary/Dictionary';
 
 function BookList() {
     let [book, setBook] = useState([]);
@@ -14,14 +15,14 @@ function BookList() {
     }
     const q = useQuery().get('q') || '';
 
-    useEffect(() => {
-        getBooks();
-    }, []);
-
     async function getBooks() {
         const res = await axios('/books');
             setBook(res.data)
     }
+    
+    useEffect(() => {
+        getBooks();
+    }, []);
 
     function search(book) {
         const title = book.title.toLowerCase()
@@ -31,13 +32,20 @@ function BookList() {
     if(book) {
         return (
             <div className={ styles.container }>
-                <div className={ styles.list }>
-                    {book
-                    .filter(search)
-                    .map(book => <BookCard book={ book } key={ book.id } />) }
+                <div className={ styles.pageItems }>
+                    {/* <div>
+                        <Weather/>
+                    </div> */}
+                    <div>
+                        <Dictionary/>
+                    </div>
+                    <div className={ styles.list }>
+                        {book
+                        .filter(search)
+                        .map(book => <BookCard book={ book } key={ book.id } />) }
+                    </div>
                 </div>
             </div>
-
         )
     }
     // if(books) {

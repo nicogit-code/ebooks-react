@@ -8,7 +8,8 @@ import UserContext from '../auth/UserContext';
 function BookReviews() {
     
     const { bookId } = useParams();
-    const [book, setBook] = useState(null);
+    // const [book, setBook] = useState(null);
+    const setBook = useState(null);
     const [reviews, setReviews] = useState([]);
     const { user } = useContext(UserContext);
 
@@ -44,7 +45,7 @@ function BookReviews() {
                             <h6>{ review.date }</h6>
                             <p>{ review.body }</p>
                             {(user && user.username === review.user ?
-                                <Link className={ styles.button } to={"/books/edit/" + review.id }>Editeaza review</Link>
+                                <Link className={ styles.button } to={"/books/edit/" + review.id } key={review.id}>Editeaza review</Link>
                                 // <button onClick={this.deleteReviewHandler} className={ styles.button }>Sterge review</button>
                             : null)}
                         </> 
