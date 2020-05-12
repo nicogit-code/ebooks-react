@@ -7,7 +7,8 @@ import BookList from './books/BookList';
 import BookDetails from './books/BookDetails';
 import AddBookReview from './books/AddBookReview';
 import EditBookReview from './books/EditBookReview';
-import Dictionary from './dictionary/Dictionary';
+import GoTBooks from './got/GoTBooks';
+// import Dictionary from './dictionary/Dictionary';
 
 import Register from './auth/Register';
 import Login from './auth/Login';
@@ -67,8 +68,8 @@ function App() {
               <UserProfile/>
             </Route>
 
-            <Route path="/words">
-              <Dictionary/>
+            <Route path="/game-of-thrones">
+              <GoTBooks/>
             </Route>
         </div>
       </BrowserRouter>

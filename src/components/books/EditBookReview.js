@@ -47,48 +47,44 @@ export default function EditReview() {
     }
 
     if(!review) {
-        return <h2>Loading...</h2>;
+        return <h2>Nu ai review-uri salvate</h2>;
     }
 
     return (
         <div className={styles.formBody}>
-            <h1>Editează review</h1>
+            <h2>Editează review</h2>
             {(isSuccessfull ?
-            <>
-                <div className="alert alert-success" role="alert">
-                    Modificările tale a fost salvate. Mulțumim!
+            <div className="alert-success">
+                <div className="alert" role="alert">
+                    Modificările tale au fost salvate.
                 </div>
                 {redirect && <Redirect to='/'/> }
-                {/* <Redirect to ='/books/'/> */}
-                {/* <button 
-                    className={ styles.button } 
-                    onClick={ handleSubmit }
-                    href='/books/'>Back
-                </button> */}
-            </>
+            </div>
             : null)}
 
-            <form onSubmit={ handleSubmit }>
-                <div className="form-group">
-                    <label htmlFor="reviews">Review-ul tău</label>
+            <form onSubmit={ handleSubmit } className={ styles.formGroup}>
+                <div>
+                    {/* <label htmlFor="reviews">Review-ul tău</label> */}
                     <p>{ review.body }</p>
                     <input 
                         onChange={ handleInputChange }
                         value={review.body}
                         type="text" 
-                        className={'form-control'} 
+                        className={styles.formControl} 
                         id="body" 
                     />
                     <input 
                         onChange={ handleInputChange }
                         value={review.date}
-                        className={'form-control'} 
+                        className={'dateSelector'}
                         id="date" 
                         placeholder=""
                         type="date"
                     />
+                    <div>
+                        <button type="submit" className={ styles.button }>Salvează modificarea</button>
+                    </div>
                 </div>
-                <button type="submit" className={ styles.button }>Salvează modificarea</button>
             </form>
         </div>
     )

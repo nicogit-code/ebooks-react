@@ -91,6 +91,8 @@ function Register() {
             isInvalid = true;
         }
 
+        
+
         setFormError(newError);
         return isInvalid;
     }
@@ -111,7 +113,6 @@ function Register() {
 
         setFormError(newError)
     }
-    // console.log(formData);
 
     return (
         <div className="container">

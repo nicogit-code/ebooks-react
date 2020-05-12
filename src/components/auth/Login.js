@@ -111,8 +111,8 @@ export default function Login() {
                 : null)}
                 <form onSubmit={ handleSubmit }>
 
-                    <div className="form-group">
-                        <label htmlFor="username"></label>
+                    <div className={ styles.formGroup}>
+                        {/* <label htmlFor="username"></label> */}
                         <input 
                             onChange={ handleInputChange } 
                             value={ formData.username } 
@@ -124,10 +124,7 @@ export default function Login() {
                         <div className="invalid-feedback">
                             { formError.username }
                         </div>
-                    </div>
-                    
-                    <div className="form-group">
-                        <label htmlFor="password"></label>
+
                         <input 
                             onChange={ handleInputChange } 
                             value={ formData.password } 
@@ -139,38 +136,26 @@ export default function Login() {
                         <div className="invalid-feedback">
                             { formError.password }
                         </div>
-                    </div>
-                    <ul className={ styles.social }>
-                        <li>
-                            <a href="https://www.facebook.com" className={ styles.socialBtn }>
-                                <i className="fa fa-facebook fa-fw"></i> Login with Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/login/error?username_or_email=nicki_mamu%40yahoo.com&redirect_after_login=%2F" className={ styles.socialBtn }>
-                                <i className="fa fa-twitter fa-fw"></i> Login with Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://myaccount.google.com/profile" className={ styles.socialBtn }><i className="fa fa-google fa-fw">
-                            </i> Login with Google+
-                        </a>
-                        </li>
-                    </ul>
 
-                    <button type="submit" className={ styles.button } disabled={ !isFilled }>Login</button>
-
-                    {/* <div className="bottom">
-                        <ul className={ styles.options }>
+                        <ul className={ styles.social }>
                             <li>
-                                <a href="/" className="btn">Creeaza cont</a>
+                                <a href="https://www.facebook.com" className={ styles.socialBtn }>
+                                    <i className="fa fa-facebook fa-fw"></i>
+                                </a>
                             </li>
-                            <li className={ styles.separator }></li>
                             <li>
-                                <a href="/" className="btn">Ai uitat parola?</a>
+                                <a href="https://twitter.com/login/error?username_or_email=nicki_mamu%40yahoo.com&redirect_after_login=%2F" className={ styles.socialBtn }>
+                                    <i className="fa fa-twitter fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://myaccount.google.com/profile" className={ styles.socialBtn }>
+                                    <i className="fa fa-google fa-fw"></i>
+                                </a>
                             </li>
                         </ul>
-                    </div> */}
+                        <button type="submit" className={ styles.button } disabled={ !isFilled }>Login</button>
+                    </div>
                 </form>
             </div>
         </div>

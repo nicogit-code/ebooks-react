@@ -23,7 +23,6 @@ function BookDetails() {
         } catch(e) {
             console.warn(e);
         }
-        // console.log(book);
     }
 
     async function handleAddToFavorites() {
@@ -39,14 +38,14 @@ function BookDetails() {
     if(book) {
         return (
             <div className="wrapper">
-            {(isSuccessfull ?
+            {/* {(isSuccessfull ?
                 <>
                     <div className="alert alert-success" role="alert">
                         Modificările tale a fost salvate. Mulțumim!
                     </div>
                     {redirect && <Redirect to='/profile'/> }
                 </>
-                : null)}
+                : null)} */}
                 <div className={ styles.container }>
                     <div className="row">
                         <div className="col-8">
@@ -58,19 +57,25 @@ function BookDetails() {
                             <p>Titlul original: { book.originalTitle }</p>
                             <p>Limba originală: { book.originalLanguage }</p>
                             <p>Descriere: { book.description } <a href={ book.readMore }>Citeste mai mult</a></p>
-                            {/* <button className={ styles.button }><a href={ book.download }>Download</a></button> */}
-                            {/* <button className={ styles.button }><a href={ book.download }>Adauga la favorite</a></button> */}
-                            {/* <button className={ styles.button }><a href={ book.download }>Editeaza...</a></button> */}
                             {(user ?
                                 <Link className={ styles.button } to={ book.download }>Download</Link>
                             : null)}
-                            
+                                                        
                             {(user ?
-                                <Link className={ styles.button } onClick={ handleAddToFavorites }>Adaugă la favorite</Link>
+                                <Link className={ styles.button } to={"/books/add/" + book.id }>Adaugă review</Link>
                             : null)}
                             
                             {(user ?
-                                <Link className={ styles.button } to={"/books/add/" + book.id }>Adaugă review</Link>
+                            <>
+                                <Link className={ styles.button } onClick={ handleAddToFavorites }>Adaugă la favorite</Link>
+                                {(isSuccessfull ?
+                                <div className="alert alert-success" role="alert">
+                                    Modificările tale a fost salvate.
+                                    { redirect && <Redirect to='/profile'/> }
+                                </div>
+                                
+                                : null)}
+                            </>
                             : null)}
                         </div>
                         <div>

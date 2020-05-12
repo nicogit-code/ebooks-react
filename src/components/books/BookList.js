@@ -4,7 +4,7 @@ import {useLocation} from 'react-router-dom';
 
 import styles from './BookList.module.css';
 import BookCard from './BookCard';
-// import Weather from '../weather/Weather';
+import Weather from '../weather/Weather';
 import Dictionary from '../dictionary/Dictionary';
 
 function BookList() {
@@ -33,16 +33,16 @@ function BookList() {
         return (
             <div className={ styles.container }>
                 <div className={ styles.pageItems }>
-                    {/* <div>
-                        <Weather/>
-                    </div> */}
                     <div>
-                        <Dictionary/>
+                        <Weather/>
                     </div>
                     <div className={ styles.list }>
                         {book
                         .filter(search)
                         .map(book => <BookCard book={ book } key={ book.id } />) }
+                    </div>
+                    <div>
+                        <Dictionary/>
                     </div>
                 </div>
             </div>

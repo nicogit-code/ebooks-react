@@ -1,4 +1,4 @@
-.container,
+
 .reviews {
     /* margin: 0 auto; */
     padding: 2rem;
@@ -8,7 +8,7 @@
 
 .cardImg {
     width: 130%;
-    padding-left: 1rem;
+    padding-left: 4rem;
     /* height: 100%; */
 }
 
@@ -23,12 +23,20 @@
     color: rgb(219, 57, 84);
     font-style: italic;
     padding-top: 20px;
+    text-align: left;
 }
 
 .reviews h6 {
-    /* color: rgb(219, 57, 84); */
+    color: black;
     font-size: x-small;
     font-weight: bold;
+    text-align: left;
+}
+
+h1 {
+    color: rgb(219, 57, 84);
+    font-weight: bold;
+    text-align: left;
 }
 
 .button {
@@ -51,4 +59,9 @@ a {
 a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.alert {
+    position: fixed;
+    align-self: center;
 }

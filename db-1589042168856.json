@@ -13,7 +13,7 @@
       "publicationDate": "1947",
       "originalTitle": "La Peste",
       "originalLanguage": "Franceză",
-      "description": "În orașul Oran, mii de șobolani, inițial neobservați de populație, încep să moară în stradă. Curând începe o isterie care determină ziarele locale să prezinte acest incident straniu. Autoritățile răspund presiunii publice prin strângerea și incinerarea șobolanilor, fără să știe că operațiunea de colectare era catalizatorul pentru răspândirea ciumei bubonice.",
+      "description": "În ora?ul Oran, mii de ?obolani, ini?ial neobserva?i de popula?ie, încep să moară în stradă. Curând începe o isterie care determină ziarele locale să prezinte acest incident straniu. Autorită?ile răspund presiunii publice prin strângerea ?i incinerarea ?obolanilor, fără să ?tie că opera?iunea de colectare era catalizatorul pentru răspândirea ciumei bubonice.",
       "readMore": "https://ro.wikipedia.org/wiki/Ciuma_(roman)",
       "download": "https://1drv.ms/w/s!AgbJEwFyAz9FjsxJI-NqSm34dz15-w"
     },
@@ -257,7 +257,7 @@
     },
     {
       "id": 1600,
-      "title": "Eloquent JavaScript",
+      "title": "Eloquent JavaScript - 3rd edition",
       "author": "Marijn Haverbeke",
       "isbn": "978-1-593-27951-6",
       "categoryId": 10,
@@ -340,8 +340,8 @@
     {
       "user": "Nico",
       "popularityId": 900,
-      "date": "2020-05-11",
-      "body": "testing",
+      "date": "02-05-2020",
+      "body": "Fascinating.I recommend reading this with an open mind. It seems many who give this book low reviews are particularly challenged by the authors stance.",
       "id": 10
     },
     {
@@ -354,8 +354,8 @@
     {
       "user": "Nico",
       "popularityId": 200,
-      "date": "2020-05-12",
-      "body": "O carte minunata, merita citita si recitita!",
+      "date": "2020-05-06",
+      "body": "O carte minunata, merita citita si recitita!!!",
       "id": 14
     },
     {
@@ -375,7 +375,7 @@
     {
       "user": "Nico",
       "popularityId": 600,
-      "date": "2020-05-11",
+      "date": "02-05-2020",
       "body": "Fascinating.I recommend reading this with an open mind. It seems many who give this book low reviews are particularly challenged by the authors stance.",
       "id": 17
     },
@@ -454,48 +454,6 @@
       "date": "2019-09-10",
       "body": "I would recommend this book for anyone who works with JavaScript. For a beginner, I would pair it with a book on programming fundamentals and get started coding literally anything.",
       "id": 30
-    },
-    {
-      "user": "Nico",
-      "popularityId": 100,
-      "date": "2020-05-12",
-      "body": "Great book!!!",
-      "id": 31
-    },
-    {
-      "user": "Nico",
-      "popularityId": 300,
-      "date": "2020-05-12",
-      "body": "Great book!!!",
-      "id": 32
-    },
-    {
-      "user": "Nico",
-      "popularityId": 400,
-      "date": "2020-05-02",
-      "body": "Great book!",
-      "id": 32
-    },
-    {
-      "user": "Nico",
-      "popularityId": 500,
-      "date": "2020-05-02",
-      "body": "Great book!",
-      "id": 33
-    },
-    {
-      "body": "Great!",
-      "date": "2020-05-12",
-      "user": "Nico",
-      "popularityId": 200,
-      "id": 34
-    },
-    {
-      "body": "Great book!!!",
-      "date": "2020-05-12",
-      "user": "Nico",
-      "popularityId": 800,
-      "id": 35
     }
   ],
   "popularity": [
@@ -595,16 +553,6 @@
       "username": "Nico",
       "password": "aaa",
       "id": 3
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 4
-    },
-    {
-      "username": "Nico",
-      "password": "aaa",
-      "id": 5
     }
   ],
   "userLibrary": [
@@ -622,6 +570,11 @@
       "userId": 2,
       "bookId": 600,
       "id": 5
+    },
+    {
+      "userId": 3,
+      "bookId": 100,
+      "id": 6
     }
   ],
   "categories": [

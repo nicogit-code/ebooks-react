@@ -1,0 +1,8 @@
+.currentTemp {
+    padding: 2rem;
+    background-color: white;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 0 5px #888;
+}

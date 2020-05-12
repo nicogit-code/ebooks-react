@@ -13,6 +13,7 @@ function UserLibrary(onDelete) {
     const [library, setLibrary] = useState([]);
     const [ deleteItem, setDeleteItem ] = useState(null);
     const { user } = useContext(UserContext);
+    const [redirect, setRedirect] = useState(false);
 
     async function getUserLib() {
 
@@ -65,9 +66,10 @@ function UserLibrary(onDelete) {
             {(deleteItem ?
                 <>
                     <div className="alert alert-success" role="alert">
-                        Modificările tale a fost salvate. Mulțumim!
+                        Modificările tale au fost salvate.
+                        {redirect && <Redirect to='/profile'/> }
                     </div>
-                    <Redirect to='/profile'/>
+                    {/* <Redirect to='/profile'/> */}
                 </>
                 : null)}
             <>

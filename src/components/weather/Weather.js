@@ -1,34 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import styles from './Weather.module.css';
 
 function Weather() {
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Brasov,ro&appid=c7da641777760054e5ca6164eb47580a';
-    const apiKey = 'af588ac18f73c1ee8e2ddbd115f8ffe3';
-    const location = 'Brasov,ro';
-    fetch(url)
-    .then((res) => res.json())
-    .then(temp);
 
-    function temp(data) {
-        const temperatura = data.main.temp - 273.15;
-        // const span = document.querySelector('[data-temperature]');
-        // span.innerHTML = temperatura.toFixed(1) + '&deg;C';
+    const [temp, setTemp] = useState(null);
+
+    async function getWeather() {
+        const urlW = 'https://api.openweathermap.org/data/2.5/weather?q=Brasov,ro&appid=af588ac18f73c1ee8e2ddbd115f8ffe3';
+        const res = await axios.get(urlW);
+        const temp = res.data.main.temp;
+        setTemp(temp);
     }
 
+    useEffect (() => {
+        getWeather();
+    }, [])
+
     return (
-        <>
-        <div>
-            <h5>Temperatura in Brasov, Romania</h5>
+        <div className={ styles.currentTemp }>
+            <div>Temperatura curentă în Brașov: 
+                {(temp-273.15).toFixed(1) + '\u00b0C'}
+            </div>
         </div>
-        <div>
-            <input className="wrapper"
-                // onChange = { handleInputChange }
-                value="text"
-                type="text"
-                placeholder="">
-            </input>
-        </div>
-        </>
+        
     )
 }
 

@@ -38,7 +38,6 @@ export default function AddReview() {
             setTimeout(() => setRedirect(true), 2000);
 
             console.log(res);
-            // setBook(res.data);
         } catch(e) {
             console.warn(e);
         }
@@ -62,23 +61,22 @@ export default function AddReview() {
     
     return (
         <div className={styles.formBody}>
-            <h1>Ai citit-o? Scrie un review!</h1>
+            <h2>Ai citit-o? Scrie un review!</h2>
             {(isSuccessfull ?
-            <>
-                <div className="alert alert-success" role="alert">
-                    Review-ul tau a fost salvat. Multumim!
+            <div className="alert-success">
+                <div className="alert" role="alert">
+                    Review-ul tau a fost salvat.
                 </div>
                 {redirect && <Redirect to='/'/> }
                 
-            </>
+            </div>
                 // <button type="submit" className={ styles.button }>Inapoi</button>
             : null)}
 
 
 
             <form onSubmit={ handleSubmit }>
-                <div className="form-group">
-                    {/* <label htmlFor="reviews">Review</label> */}
+                <div className={ styles.formGroup}>
                     <input 
                         onChange={ handleInputChange }
                         value={ review.body }
@@ -96,9 +94,10 @@ export default function AddReview() {
                         placeholder="Selectează data"
                         type="date"
                     />
+                    <div>
+                        <button type="submit" className={ styles.button }>Salvează</button>
+                    </div>
                 </div>
-
-                <button type="submit" className={ styles.button }>Salvează</button>
             </form>
             
         </div>

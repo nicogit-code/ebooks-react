@@ -3,11 +3,25 @@
     box-shadow: 0 0 5px #888;
     position: relative;
     text-align: center;
+    height: 350px;
+    justify-content: center;
     background-color:rgb(219, 57, 84, 0.07);
     border: 1px solid rgb(219, 57, 84, 0.5);
     border-radius: 5px;
     margin: 5rem 10rem;
     padding: 2rem;
+}
+
+.formGroup {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
 }
 
 .button {
@@ -17,7 +31,6 @@
     display: inline-block;
     color: rgb(219, 57, 84);
     padding: 4px 10px;
-    margin-right: 1rem;
 }
 
 .button:hover {
@@ -34,17 +47,19 @@ a:hover {
     text-decoration: none;
 }
 
-h1,
+h1
 {
   padding: 8px 10px;
-  align-self: center;
+  text-align: center;
 }
 
 .social {
     list-style: none;
     display: flex;
     align-items: center;
+    /* margin-top: 2rem; */
     margin-top: 2rem;
+    transform: translate(-7%, 0%);
 
 }
 

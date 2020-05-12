@@ -1,7 +1,8 @@
 .card {
-    margin: 0 2%;
+    margin: 0 1%;
     /* max-width: 90%; */
     display: flex;
+    box-sizing: border-box;
 }
 
 .cardBody {
@@ -12,6 +13,12 @@
     margin-bottom: 1.5rem;
     list-style: none;
     max-width: 250px;
+}
+
+li > h5,
+li > h6 {
+    color: #000;
+    text-align: left;
 }
 
 .cardImg {
@@ -28,7 +35,6 @@
     border-radius: 10px;
     transition: all .15s ease-in-out;
     color: rgb(219, 57, 84);
-    /* font-weight: bold; */
     padding: 4px 10px;
 }
 

@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import UserContext from '../auth/UserContext';
 import Logo from '../images/logo2.png';
-// import Filter from '../../filter/Filter';
+// import GoTBooks from '../got/GoTBooks';
 
 import styles from './Header.module.css';
 
@@ -36,8 +36,9 @@ function Header() {
         <div className={styles.siteNav}>
           <ul>
             <li className={styles.active}><a href="/">Home</a></li>
-            <li><a href="#0">Despre</a></li>
-            <li><a href="#0">Contact</a></li>
+            {/* <li><a href="#0">Despre</a></li> */}
+            {/* <li><a href="#0">Contact</a></li> */}
+            <li><a href="/game-of-thrones">GoT Lovers only</a></li>
           </ul>
         </div>
           

@@ -35,7 +35,6 @@ function UserProfile() {
                     <p>Biblioteca ta:</p>
                     <div className={ styles.list }>
                         <UserLibrary />
-                        {/* <BookCard book={userLibrary}/> */}
                     </div>
                 </div>
         );

@@ -1,12 +1,36 @@
 .formBody {
     box-sizing: border-box;
+    width: 50%;
+    height: 350px;
     position: relative;
     text-align: center;
+    justify-content: center;
     background-color:rgb(219, 57, 84, 0.07);
     border: 1px solid rgb(219, 57, 84, 0.5);
     border-radius: 5px;
     margin: 5rem 10rem;
     padding: 2rem;
+    box-shadow: 0 0 5px #888;
+}
+
+.formGroup {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formControl {
+    /* resize: vertical; */
+    overflow: scroll;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.alert {
+    margin-bottom: 10rem;
+    position: absolute;
 }
 
 .button {
@@ -15,7 +39,7 @@
     border-radius: 10px;
     transition: all .15s ease-in-out;
     color: rgb(219, 57, 84);
-    /* font-weight: bold; */
+    margin-top: 1rem;
     padding: 4px 10px;
 }
 
@@ -41,10 +65,3 @@ a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
-/* .formControl {
-    width: 300px;
-    resize: vertical;
-    overflow: scroll;
-    padding-left: 3px;
-} */
